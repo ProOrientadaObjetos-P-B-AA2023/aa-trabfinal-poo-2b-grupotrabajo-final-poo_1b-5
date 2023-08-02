@@ -137,11 +137,11 @@ public class ConexionDB {
             preparedStatement.setString(4, cliente.marca);
             preparedStatement.setString(5, cliente.modelo);
             preparedStatement.setString(6, cliente.numeroCelular);
-            preparedStatement.setDouble(7, cliente.pagoMensual);
+            preparedStatement.setString(7, String.valueOf(cliente.pagoMensual));
             preparedStatement.setString(8, cliente.tipoPersonal);
-            preparedStatement.setDouble(9, cliente.costoMatricula);
-            preparedStatement.setInt(10, cliente.establecerTotalPlanes());
-            preparedStatement.setDouble(11, cliente.establecerTotal());
+            preparedStatement.setString(9, String.valueOf(cliente.costoMatricula));
+            preparedStatement.setString(10, String.valueOf(cliente.establecerTotalPlanes()));
+            preparedStatement.setString(11, String.valueOf(cliente.establecerTotal()));
             executePreparedStatement(preparedStatement);
         } catch (SQLException sqlException) {
             this.msj = sqlException.getMessage();
@@ -323,30 +323,22 @@ public class ConexionDB {
         return planes;
     }
 
-    public ArrayList<Cliente> obtenerClientes() {
-        ArrayList<Cliente> clientes = new ArrayList<>();
+    public ArrayList<Cliente> obtenerClientes(){
+        ArrayList<Cliente> clientes= new ArrayList<>();
         try {
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:2_SOLUCION/SOLUCION/bd/DB_Planes.db");
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM Cliente");
-            while (resultSet.next()) {
-                Cliente cliente = new Cliente(resultSet.getString("nombre"),
-                        resultSet.getString("cedula"),
-                        resultSet.getString("ciudad"),
-                        resultSet.getString("marca"),
-                        resultSet.getString("modelo"),
-                        resultSet.getString("numeroCelular"),
-                        resultSet.getDouble("pagoMensual"),
-                        resultSet.getString("tipoPersonal"),
+            setConcDB("jdbc:sqlite:2_SOLUCION/SOLUCION/bd/DB_Planes.db");
+            Statement statement=concDB.createStatement();
+            ResultSet resultSet= statement.executeQuery("select * from Cliente");
+            while (resultSet.next()){
+                Cliente cliente= new Cliente(resultSet.getString("nombre"),resultSet.getString("cedula"),resultSet.getString("ciudad"),resultSet.getString("marca"),
+                        resultSet.getString("modelo"),resultSet.getString("numeroCelular"),resultSet.getDouble("pagoMensual"),resultSet.getString("tipoPersonal"),
                         resultSet.getDouble("costoMatricula"));
                 cliente.establecerDBNTotalPlanes(resultSet.getInt("numeroPlanes"));
                 cliente.establecerDBTotal(resultSet.getDouble("Total"));
                 clientes.add(cliente);
-                connection.close();
-                statement.close();
-                resultSet.close();
             }
-        } catch (SQLException sqlException) {
+            resultSet.close();
+        }catch (SQLException sqlException) {
             this.msj = sqlException.getMessage();
         }
         return clientes;

@@ -37,7 +37,6 @@ public class GestionPlanes {
             public void componentResized(ComponentEvent e) {
                 super.componentResized(e);
                 mostrarDatosDBCliente();
-
             }
 
         });
@@ -86,9 +85,11 @@ public class GestionPlanes {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mostrarDatosDBCliente();
-                actualizarClienteActual();
-                btnPlanes();
-                btnFactura();
+                if (clienteActual!=null){
+                    btnPlanes();
+                    btnFactura();
+                    actualizarClienteActual();
+                }
             }
         });
         btn_Eliminar.addActionListener(new ActionListener() {
