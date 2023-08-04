@@ -5,7 +5,9 @@
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-14476247"/>
+    </properties>
     <border type="none"/>
     <children>
       <vspacer id="25fc0">
@@ -18,6 +20,8 @@
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="MODIFICAR"/>
         </properties>
       </component>
@@ -46,6 +50,8 @@
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="Nombre"/>
         </properties>
       </component>
@@ -54,6 +60,8 @@
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="Cedula"/>
         </properties>
       </component>
@@ -62,6 +70,8 @@
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="Ciudad"/>
         </properties>
       </component>
@@ -70,6 +80,8 @@
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="Modelo"/>
         </properties>
       </component>
@@ -78,6 +90,8 @@
           <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="NumeroCelular"/>
         </properties>
       </component>
@@ -86,6 +100,8 @@
           <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="PagoMensual"/>
         </properties>
       </component>
@@ -94,6 +110,8 @@
           <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="TipoPersonal"/>
         </properties>
       </component>
@@ -102,6 +120,8 @@
           <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="CostoMatricula"/>
         </properties>
       </component>
@@ -111,72 +131,21 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
-      </component>
-      <component id="56ace" class="javax.swing.JTextField" binding="txt_cedula">
-        <constraints>
-          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
         <properties>
-          <editable value="false"/>
-          <enabled value="false"/>
+          <background color="-48009"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
         </properties>
-      </component>
-      <component id="c7341" class="javax.swing.JTextField" binding="txt_ciudad">
-        <constraints>
-          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="273c2" class="javax.swing.JTextField" binding="txt_modelo">
-        <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="58e59" class="javax.swing.JTextField" binding="txt_numeroCelular">
-        <constraints>
-          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="40efa" class="javax.swing.JTextField" binding="txt_pagoMensual">
-        <constraints>
-          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="8585b" class="javax.swing.JTextField" binding="txt_tipoPersonal">
-        <constraints>
-          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="90169" class="javax.swing.JTextField" binding="txt_CostoMatricula">
-        <constraints>
-          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
       </component>
       <component id="1810d" class="javax.swing.JButton" binding="modificarButton" default-binding="true">
         <constraints>
           <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
+          <hideActionText value="false"/>
           <text value="Modificar"/>
         </properties>
       </component>
@@ -185,20 +154,110 @@
           <grid row="11" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <component id="ab4b8" class="javax.swing.JTextField" binding="txt_marca">
-        <constraints>
-          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
       <component id="d408a" class="javax.swing.JLabel">
         <constraints>
           <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="Marca"/>
+        </properties>
+      </component>
+      <component id="e5524" class="javax.swing.JTextField" binding="txt_cedula">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-48009"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="f4c16" class="javax.swing.JTextField" binding="txt_ciudad">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-48009"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="bd0fe" class="javax.swing.JTextField" binding="txt_modelo">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-48009"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="cab3f" class="javax.swing.JTextField" binding="txt_marca">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-48009"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="c351c" class="javax.swing.JTextField" binding="txt_numeroCelular">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-48009"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="51a4d" class="javax.swing.JTextField" binding="txt_pagoMensual">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-48009"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="d36a8" class="javax.swing.JTextField" binding="txt_tipoPersonal">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-48009"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
+        </properties>
+      </component>
+      <component id="99627" class="javax.swing.JTextField" binding="txt_CostoMatricula">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-48009"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
         </properties>
       </component>
     </children>

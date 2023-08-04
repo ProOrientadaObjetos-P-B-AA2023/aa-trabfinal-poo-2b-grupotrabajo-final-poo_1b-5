@@ -132,7 +132,7 @@ public class GestionPlanes {
     }
 
     public static void main(String[] args) {
-        JFrame jFrame = new JFrame("asd");
+        JFrame jFrame = new JFrame("GESTION PLANES");
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.pack();
         jFrame.setContentPane(new GestionPlanes().panelPrincipal);
@@ -141,10 +141,6 @@ public class GestionPlanes {
 
     public Cliente getClienteActual() {
         return clienteActual;
-    }
-
-    public void setCliente(Cliente cliente) {
-        clienteActual = cliente;
     }
 
     public void mostrarDatosDBCliente() {

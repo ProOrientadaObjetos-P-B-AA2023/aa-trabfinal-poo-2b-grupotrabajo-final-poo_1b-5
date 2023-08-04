@@ -127,8 +127,6 @@ public class ConexionDB {
 
     public String insertarCliente(Cliente cliente) {
         try {
-            cliente.establecerTotalPlanes();
-            cliente.establecerTotal();
             String strInsertEst = "INSERT INTO Cliente(nombre, cedula, ciudad, marca, modelo, numeroCelular, pagoMensual, tipoPersonal, costoMatricula, numeroPlanes, total) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement preparedStatement = concDB.prepareStatement(strInsertEst);
             preparedStatement.setString(1, cliente.nombre);
@@ -140,8 +138,8 @@ public class ConexionDB {
             preparedStatement.setString(7, String.valueOf(cliente.pagoMensual));
             preparedStatement.setString(8, cliente.tipoPersonal);
             preparedStatement.setString(9, String.valueOf(cliente.costoMatricula));
-            preparedStatement.setString(10, String.valueOf(cliente.establecerTotalPlanes()));
-            preparedStatement.setString(11, String.valueOf(cliente.establecerTotal()));
+            preparedStatement.setString(10, String.valueOf(0));
+            preparedStatement.setString(11, String.valueOf(0));
             executePreparedStatement(preparedStatement);
         } catch (SQLException sqlException) {
             this.msj = sqlException.getMessage();
@@ -283,7 +281,7 @@ public class ConexionDB {
         return planes;
     }
 
-    public ArrayList<Plan> totalPlanes(String cedula) {
+    public ArrayList<Plan>totalPlanes (String cedula) {
         ArrayList<Plan> planes = new ArrayList<>();
         try {
             Statement statement = concDB.createStatement();
@@ -330,11 +328,13 @@ public class ConexionDB {
             Statement statement=concDB.createStatement();
             ResultSet resultSet= statement.executeQuery("select * from Cliente");
             while (resultSet.next()){
-                Cliente cliente= new Cliente(resultSet.getString("nombre"),resultSet.getString("cedula"),resultSet.getString("ciudad"),resultSet.getString("marca"),
-                        resultSet.getString("modelo"),resultSet.getString("numeroCelular"),resultSet.getDouble("pagoMensual"),resultSet.getString("tipoPersonal"),
+                Cliente cliente= new Cliente(resultSet.getString("nombre"),resultSet.getString("cedula")
+                        ,resultSet.getString("ciudad"),resultSet.getString("marca"),
+                        resultSet.getString("modelo"),resultSet.getString("numeroCelular"),
+                        resultSet.getDouble("pagoMensual"),resultSet.getString("tipoPersonal"),
                         resultSet.getDouble("costoMatricula"));
-                cliente.establecerDBNTotalPlanes(resultSet.getInt("numeroPlanes"));
-                cliente.establecerDBTotal(resultSet.getDouble("Total"));
+                cliente.establecerTotal();
+                cliente.establecerTotalPlanes();
                 clientes.add(cliente);
             }
             resultSet.close();
@@ -360,8 +360,8 @@ public class ConexionDB {
                         resultSet.getDouble("pagoMensual"),
                         resultSet.getString("tipoPersonal"),
                         resultSet.getDouble("costoMatricula"));
-                clienteActualizado.establecerDBNTotalPlanes(resultSet.getInt("numeroPlanes"));
-                clienteActualizado.establecerDBTotal(resultSet.getDouble("Total"));
+                clienteActualizado.establecerTotal();
+                clienteActualizado.establecerTotalPlanes();
                 connection.close();
                 statement.close();
                 resultSet.close();

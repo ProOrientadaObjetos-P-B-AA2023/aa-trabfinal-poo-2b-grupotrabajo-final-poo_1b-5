@@ -1,4 +1,4 @@
-package CONTROLLER;
+package MODEL;
 
 
 import MODEL.Plan;

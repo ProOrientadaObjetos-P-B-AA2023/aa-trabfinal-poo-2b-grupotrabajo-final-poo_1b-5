@@ -5,19 +5,29 @@
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-14476247"/>
+    </properties>
     <border type="none"/>
     <children>
       <scrollpane id="8ca">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-7736629"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="bcd3a" class="javax.swing.JTable" binding="tbl_PPPM">
             <constraints/>
-            <properties/>
+            <properties>
+              <autoCreateRowSorter value="false"/>
+              <background color="-16777216"/>
+              <foreground color="-1"/>
+              <gridColor color="-16777216"/>
+              <selectionBackground color="-16777216"/>
+            </properties>
           </component>
         </children>
       </scrollpane>
@@ -30,12 +40,19 @@
         <children>
           <scrollpane id="f9868">
             <constraints/>
-            <properties/>
+            <properties>
+              <background color="-7736629"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="454c8" class="javax.swing.JTable" binding="tbl_PPPM1">
                 <constraints/>
-                <properties/>
+                <properties>
+                  <background color="-16777216"/>
+                  <foreground color="-1"/>
+                  <gridColor color="-16777216"/>
+                  <selectionBackground color="-16777216"/>
+                </properties>
               </component>
             </children>
           </scrollpane>
@@ -50,12 +67,18 @@
         <children>
           <scrollpane id="223d1">
             <constraints/>
-            <properties/>
+            <properties>
+              <background color="-7736629"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="f8e1c" class="javax.swing.JTable" binding="tbl_PPPMM">
                 <constraints/>
-                <properties/>
+                <properties>
+                  <background color="-16777216"/>
+                  <foreground color="-1"/>
+                  <selectionBackground color="-16777216"/>
+                </properties>
               </component>
             </children>
           </scrollpane>
@@ -70,12 +93,19 @@
         <children>
           <scrollpane id="472c3">
             <constraints/>
-            <properties/>
+            <properties>
+              <background color="-7736629"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="5a85" class="javax.swing.JTable" binding="tbl_PPPMME">
                 <constraints/>
-                <properties/>
+                <properties>
+                  <background color="-16777216"/>
+                  <foreground color="-1"/>
+                  <gridColor color="-16777216"/>
+                  <selectionBackground color="-16777216"/>
+                </properties>
               </component>
             </children>
           </scrollpane>
@@ -86,6 +116,8 @@
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="PlanPostPagoMegas"/>
         </properties>
       </component>
@@ -94,6 +126,8 @@
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="PlanPostPagoMinutos"/>
         </properties>
       </component>
@@ -102,6 +136,8 @@
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="PlanPostPagoMinutosMegas"/>
         </properties>
       </component>
@@ -110,6 +146,8 @@
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="PlanPostPagoMinutosMegasEconomico"/>
         </properties>
       </component>
@@ -118,6 +156,9 @@
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
           <text value="Cerrar"/>
         </properties>
       </component>
@@ -126,6 +167,9 @@
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
           <text value="Eliminar"/>
         </properties>
       </component>
@@ -134,6 +178,9 @@
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
           <text value="Eliminar"/>
         </properties>
       </component>
@@ -142,6 +189,9 @@
           <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
           <text value="Eliminar"/>
         </properties>
       </component>
@@ -150,6 +200,9 @@
           <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
           <text value="Eliminar"/>
         </properties>
       </component>

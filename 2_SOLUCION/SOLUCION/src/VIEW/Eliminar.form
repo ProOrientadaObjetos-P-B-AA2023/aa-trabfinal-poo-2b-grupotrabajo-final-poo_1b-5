@@ -5,7 +5,9 @@
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-14476247"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="dfe2d" class="javax.swing.JLabel">
@@ -13,6 +15,9 @@
           <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-5900748"/>
+          <font name="Consolas"/>
+          <foreground color="-5900748"/>
           <text value="ELIMINAR"/>
         </properties>
       </component>
@@ -21,6 +26,9 @@
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
           <text value="Eliminar Cuenta"/>
         </properties>
       </component>
@@ -29,6 +37,9 @@
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
           <text value="Eliminar Planes"/>
         </properties>
       </component>
@@ -52,6 +63,9 @@
           <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-16777216"/>
+          <font name="Consolas"/>
+          <foreground color="-1"/>
           <text value="Cerrar"/>
         </properties>
       </component>
