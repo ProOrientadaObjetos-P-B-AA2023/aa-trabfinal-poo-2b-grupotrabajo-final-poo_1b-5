@@ -39,6 +39,8 @@ public class Cliente {
             total=total-(total*0.10);
         if (tipoPersonal.toUpperCase().equals("PROFESOR"))
             total=total-(total*0.30);
+        if (costoMatricula>2000)
+            total=total-(total*0.05);
         return total;
     }
 
